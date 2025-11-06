@@ -322,7 +322,7 @@ EOF
     # Generate SSH key if it doesn't exist
     if [[ ! -f "$ssh_key" ]]; then
         echo "Generating RSA SSH key..."
-        ssh-keygen -t rsa -b 4096 -f "$ssh_key" -C "tom.hendra@outlook.com" -N ""
+        ssh-keygen -t rsa -b 4096 -f "$ssh_key" -C "tordillos2@gmail.com" -N ""
 
         # Start SSH agent and add key
         eval "$(ssh-agent -s)"
