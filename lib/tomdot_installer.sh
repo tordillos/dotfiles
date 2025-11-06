@@ -439,7 +439,7 @@ install_packages() {
     # Ensure dotfiles directory exists
     if [[ ! -d "$dotfiles_dir" ]]; then
         echo "Cloning dotfiles repository..."
-        if ! git clone git@github.com:tomhendra/dotfiles.git "$dotfiles_dir"; then
+        if ! git clone git@github.com:tordillos/dotfiles.git "$dotfiles_dir"; then
             echo "Failed to clone dotfiles repository"
             return 1
         fi

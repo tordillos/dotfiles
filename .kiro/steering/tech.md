@@ -39,7 +39,7 @@
 
 ```bash
 # Full environment setup (fresh macOS)
-curl -ssL https://git.io/tomdot | sh
+curl -ssL https://raw.githubusercontent.com/tordillos/dotfiles/main/install.sh | sh
 
 # Create symlinks (built into install.sh)
 ./install.sh --step symlinks

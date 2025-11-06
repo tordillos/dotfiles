@@ -21,7 +21,7 @@ bootstrap_tomdot() {
         echo "Cloning dotfiles repository to $dotfiles_dir"
 
         # Clone the repo
-        if ! git clone https://github.com/tomhendra/dotfiles.git "$dotfiles_dir"; then
+        if ! git clone https://github.com/tordillos/dotfiles.git "$dotfiles_dir"; then
             echo -e "${C_RED}Error: Failed to clone dotfiles repository${C_RESET}"
             echo "Please ensure you have git installed and internet connectivity."
             exit 1
@@ -139,7 +139,7 @@ while [[ $# -gt 0 ]]; do
             echo "  $0 --resume           # Resume from failure"
             echo ""
             echo "Entry point compatibility:"
-            echo "  curl -ssL https://git.io/tomdot | sh"
+            echo "  curl -ssL https://raw.githubusercontent.com/tordillos/dotfiles/main/install.sh | sh"
             exit 0
             ;;
         *)

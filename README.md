@@ -1,9 +1,8 @@
 <div align=center>
-<img alt="Tom Hendra logo" src="https://res.cloudinary.com/tomhendra/image/upload/v1696166377/tomhendra-logo/tomhendra-avatar.png" width="100" />
-<h1>tomdot</h1>
+<h1>Dotfiles</h1>
 </div>
 
-**TL;DR:** Run `curl -ssL https://git.io/tomdot | sh` on a clean macOS installation.
+**TL;DR:** Run `curl -ssL https://raw.githubusercontent.com/tordillos/dotfiles/main/install.sh | sh` on a clean macOS installation.
 
 **Disclaimer:** Dotfiles are personal things, and as such I would advise against rolling these ones unmodified — they are specific to my dev setup and would likely need to be tweaked to fit yours.
 
@@ -43,7 +42,7 @@ There is some preparation to be done before performing a clean install of macOS 
 2. Ensure you are logged into the App Store (`mas signin` has been [broken for many years](https://github.com/mas-cli/mas/issues/164)).
 3. Install Xcode + CLT [manually](https://developer.apple.com/download/all/) to avoid Homebrew errors.
 4. Run Software update from system settings to ensure CLT is the latest version.
-5. Run `curl -ssL https://git.io/tomdot | sh` in the terminal.
+5. Run `curl -ssL https://raw.githubusercontent.com/tordillos/dotfiles/main/install.sh | sh` in the terminal.
 6. Grab a coffee and let tomdot do its thing!
 
 ## Post-Installation
