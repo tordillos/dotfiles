@@ -1,7 +1,6 @@
 # General
 alias brewup="brew upgrade && brew cleanup && brew doctor"
-alias chrome="open -a 'Google Chrome'"
-alias firefox="open -a 'Firefox Developer Edition'"
+alias edge="open -a 'Microsoft Edge'"
 alias cafe="caffeinate -u -t 3600"
 alias sshcopy="pbcopy < ${HOME}/.ssh/id_rsa.pub"
 alias reloadzsh="source ${HOME}/.zshrc"
