@@ -4,8 +4,8 @@
 
 - **Shell**: zsh with custom configuration
 - **Package Management**: Homebrew for system packages, npm/pnpm/bun for Node.js
-- **Version Management**: nvm for Node.js, rbenv for Ruby
-- **Languages**: JavaScript/TypeScript (primary), Python, Ruby
+- **Version Management**: nvm for Node.js
+- **Languages**: JavaScript/TypeScript (primary), Python
 - **Terminal**: Ghostty with Tokyo Night Storm theme
 - **Editor**: VS Code, Zed, Kiro
 - **Git**: Enhanced with delta for diffs

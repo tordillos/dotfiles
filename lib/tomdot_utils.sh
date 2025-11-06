@@ -241,14 +241,6 @@ tomdot_check_tool_functionality() {
             npm --version >/dev/null 2>&1
             test_result=$?
             ;;
-        "cargo")
-            cargo --version >/dev/null 2>&1
-            test_result=$?
-            ;;
-        "rustc")
-            rustc --version >/dev/null 2>&1
-            test_result=$?
-            ;;
         "zsh")
             zsh --version >/dev/null 2>&1
             test_result=$?

@@ -22,7 +22,6 @@ ssh-add -A 2>/dev/null
 typeset -U path  # Ensures unique entries in PATH
 
 path=(
-    "$HOME/.rbenv/bin"
     "./node_modules/.bin"
     "./vendor/bin"
     "$HOME/.local/share/solana/install/active_release/bin"
@@ -33,9 +32,6 @@ path=(
 )
 
 export PATH
-
-# Ruby version management init
-eval "$(rbenv init -)"
 
 # Aliases
 source "${DOTFILES}/zsh/zsh_aliases.zsh"
