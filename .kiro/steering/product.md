@@ -1,6 +1,6 @@
 # Product Overview
 
-**tomdot** is Tom Hendra's personal macOS development environment setup and dotfiles repository.
+**dotfiles** is Pedro Blázquez's personal macOS development environment setup and dotfiles repository.
 
 ## Purpose
 
@@ -18,4 +18,4 @@ This repository provides a complete, automated setup for a fresh macOS installat
 
 ## Target User
 
-Personal use by Tom Hendra, but designed as a reference implementation for macOS developer environment automation.
+Personal use by Pedro Blázquez, but designed as a reference implementation for macOS developer environment automation.

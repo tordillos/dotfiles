@@ -1,9 +1,9 @@
 #!/bin/sh
 
-username="tomhendra"
+username="tordillos"
 dir="${HOME}/Developer"
 
-declare -a repos=("recilla" "tomhendra.dev")
+declare -a repos=("my-watchlist")
 
 clone_repo () {
   repo="$1"

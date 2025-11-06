@@ -1,6 +1,6 @@
 [user]
-	name = Tom Hendra
-	email = tom.hendra@outlook.com
+	name = Pedro Blázquez
+	email = tordillos2@gmail.com
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -10,12 +10,12 @@
 
 [core]
 	editor = cursor --wait
-	excludesfile = /Users/Tom/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	pager = delta
 	ui = en
 
 [commit]
-	template = /Users/Tom/.stCommitMsg
+	template = ~/.stCommitMsg
 
 [init]
 	defaultBranch = main
