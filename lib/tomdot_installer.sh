@@ -472,35 +472,27 @@ install_packages() {
 install_languages() {
     local dotfiles_dir="${HOME}/.dotfiles"
 
-    # Install Rust
-    echo "Installing Rust..."
-    if ! command -v rustc >/dev/null 2>&1; then
-        if ! curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y; then
-            echo "Failed to install Rust"
-            return 1
-        fi
-        # Source Rust environment
-        source "$HOME/.cargo/env"
-    else
-        echo "Rust already installed"
-    fi
 
-    # Install Node.js via fnm
+    # Install Node.js via nvm
     echo "Setting up Node.js..."
 
-    # Ensure fnm is available (should be installed via Homebrew)
-    if ! command -v fnm >/dev/null 2>&1; then
-        echo "fnm not found - should be installed via Homebrew"
-        return 1
+    # Install nvm if not present
+    if [[ ! -d "$HOME/.nvm" ]]; then
+        echo "Installing nvm..."
+        if ! curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash; then
+            echo "Failed to install nvm"
+            return 1
+        fi
     fi
 
-    # Setup fnm environment
-    eval "$(fnm env --use-on-cd)"
+    # Setup nvm environment
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
     # Install Node.js 22
-    if ! fnm list | grep -q "v22"; then
+    if ! nvm list | grep -q "v22"; then
         echo "Installing Node.js 22..."
-        if ! fnm install 22; then
+        if ! nvm install 22; then
             echo "Failed to install Node.js 22"
             return 1
         fi
@@ -509,8 +501,8 @@ install_languages() {
     fi
 
     # Set as default
-    fnm use 22
-    fnm default 22
+    nvm use 22
+    nvm alias default 22
 
     # Enable Corepack for pnpm/yarn
     echo "Enabling Corepack..."
@@ -652,7 +644,7 @@ tomdot_install() {
     tomdot_execute_step "ssh_setup" "install_ssh_setup" "Set up SSH keys and GitHub authentication"
     tomdot_execute_step "homebrew" "install_homebrew" "Install Homebrew package manager"
     tomdot_execute_step "packages" "install_packages" "Install packages from Brewfile"
-    tomdot_execute_step "languages" "install_languages" "Install Node.js and Rust toolchains"
+    tomdot_execute_step "languages" "install_languages" "Install Node.js toolchain"
     tomdot_execute_step "symlinks" "create_symlinks" "Create dotfiles symlinks"
 
     # End the installation section properly
@@ -730,7 +722,7 @@ tomdot_resume() {
                     tomdot_execute_step "packages" "install_packages" "Install packages from Brewfile"
                     ;;
                 "languages")
-                    tomdot_execute_step "languages" "install_languages" "Install Node.js and Rust toolchains"
+                    tomdot_execute_step "languages" "install_languages" "Install Node.js toolchain"
                     ;;
                 "symlinks")
                     tomdot_execute_step "symlinks" "create_symlinks" "Create dotfiles symlinks"
@@ -757,7 +749,7 @@ tomdot_run_step() {
             tomdot_execute_step "packages" "install_packages" "Install packages from Brewfile"
             ;;
         "languages"|"lang")
-            tomdot_execute_step "languages" "install_languages" "Install Node.js and Rust toolchains"
+            tomdot_execute_step "languages" "install_languages" "Install Node.js toolchain"
             ;;
         "symlinks"|"links")
             tomdot_execute_step "symlinks" "create_symlinks" "Create dotfiles symlinks"
@@ -910,15 +902,12 @@ except:
 }
 
 tomdot_rollback_languages() {
-    # Remove fnm Node.js installations (keep fnm itself)
-    if command -v fnm >/dev/null 2>&1; then
-        echo "Removing Node.js installations..."
-        fnm list | grep -E "v[0-9]+" | while read -r version; do
-            fnm uninstall "$version" 2>/dev/null || true
-        done
+    # Remove nvm and Node.js installations
+    if [[ -d "$HOME/.nvm" ]]; then
+        echo "Removing nvm and Node.js installations..."
+        rm -rf "$HOME/.nvm"
     fi
 
-    # Note: We don't remove Rust as it's installed to user directory
     echo "Language rollback completed"
 }
 
@@ -1030,7 +1019,7 @@ tomdot_validate_homebrew() {
 
 tomdot_validate_packages() {
     # Check for key packages that should be installed
-    local key_packages=("git" "fnm" "bat" "starship")
+    local key_packages=("git" "bat" "starship")
     local missing_packages=()
 
     for package in "${key_packages[@]}"; do
@@ -1049,29 +1038,18 @@ tomdot_validate_packages() {
 }
 
 tomdot_validate_languages() {
-    # Check Rust - source environment if needed
-    if ! command -v rustc >/dev/null 2>&1; then
-        # Try sourcing Rust environment
-        if [[ -f "$HOME/.cargo/env" ]]; then
-            source "$HOME/.cargo/env"
-        fi
-
-        # Check again after sourcing
-        if ! command -v rustc >/dev/null 2>&1; then
-            echo "Validation failed: Rust not found"
-            return 1
-        fi
-    fi
-
-    # Check Node.js
-    if ! command -v node >/dev/null 2>&1; then
-        echo "Validation failed: Node.js not found"
+    # Check nvm installation
+    if [[ ! -d "$HOME/.nvm" ]]; then
+        echo "Validation failed: nvm not found"
         return 1
     fi
 
-    # Check fnm
-    if ! command -v fnm >/dev/null 2>&1; then
-        echo "Validation failed: fnm not found"
+    # Source nvm and check Node.js
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+    if ! command -v node >/dev/null 2>&1; then
+        echo "Validation failed: Node.js not found"
         return 1
     fi
 

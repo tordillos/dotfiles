@@ -4,8 +4,8 @@
 
 - **Shell**: zsh with custom configuration
 - **Package Management**: Homebrew for system packages, npm/pnpm/bun for Node.js
-- **Version Management**: fnm for Node.js, rbenv for Ruby
-- **Languages**: JavaScript/TypeScript (primary), Rust, Python, Ruby
+- **Version Management**: nvm for Node.js, rbenv for Ruby
+- **Languages**: JavaScript/TypeScript (primary), Python, Ruby
 - **Terminal**: Ghostty with Tokyo Night Storm theme
 - **Editor**: VS Code, Zed, Kiro
 - **Git**: Enhanced with delta for diffs
@@ -31,7 +31,6 @@
 ### Web3/Blockchain
 
 - Solana CLI tools
-- Rust for smart contracts
 
 ## Common Commands
 
@@ -58,9 +57,9 @@ curl -ssL https://raw.githubusercontent.com/tordillos/dotfiles/main/install.sh |
 brewup
 
 # Node.js version management
-fnm install 22
-fnm use 22
-fnm default 22
+nvm install 22
+nvm use 22
+nvm alias default 22
 
 # Global Node packages
 ./global_pkg.sh

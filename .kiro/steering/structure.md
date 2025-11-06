@@ -80,6 +80,6 @@ Tokyo Night Storm theme is applied across:
 3. Clone this repository to `~/.dotfiles`
 4. Clone development repositories to `~/Developer`
 5. Install Homebrew and packages
-6. Install language runtimes (Node.js, Rust)
+6. Install language runtimes (Node.js)
 7. Create configuration symlinks
 8. Apply system preferences (optional)

@@ -85,13 +85,13 @@ alias wip="git add . && git commit -m 'WIP'"
 
 # Node
 alias rnm="rm -rf node_modules"
-alias node-lts="fnm install --lts && fnm use lts-latest"
-alias node-latest="fnm install latest && fnm use latest"
-# Node fnm
-alias fnm-list="fnm list"
-alias fnm-ls="fnm list"
-alias fnm-use="fnm use"
-alias fnm-install="fnm install"
+alias node-lts="nvm install --lts && nvm use --lts"
+alias node-latest="nvm install node && nvm use node"
+# Node nvm
+alias nvm-list="nvm list"
+alias nvm-ls="nvm list"
+alias nvm-use="nvm use"
+alias nvm-install="nvm install"
 
 # Deno
 alias dts="deno task start"
@@ -171,13 +171,6 @@ alias ynuke="rm -rf node_modules/ yarn.lock"
 alias yw="yarn workspace"
 alias yus="corepack use yarn@latest"
 alias ydir="yarn global dir"
-
-# Rust
-alias rb="rustup doc --book"
-alias cc="cargo check"
-alias cr="cargo run"
-alias cb="cargo build"
-alias cbr="cargo build --release"
 
 # Xcode
 alias xcode-erase-all-simulators="sudo xcrun simctl erase all"

@@ -13,15 +13,14 @@ On a fresh macOS system, tomdot will do the following:
 1. Generate SSH auth keys for GitHub.
 2. Download repos from GitHub to your local machine.
 3. Install Homebrew & packages via Brewfile.
-4. Install fnm (Fast Node Manager) for Node.js version management.
-5. Install Node.js 22 via fnm.
+4. Install nvm (Node Version Manager) for Node.js version management.
+5. Install Node.js 22 via nvm.
 6. Enable Corepack for pnpm/yarn per-project management.
 7. Install global Node.js packages via npm.
-8. Install Rust
-9. Install apps from the App Store via mas-cli.
-10. Configure bat, Starship, and other CLI tools.
-11. Symlink config files from `~/.dotfiles` to system equivalents.
-12. Apply modern macOS system preferences (optional).
+8. Install apps from the App Store via mas-cli.
+9. Configure bat, Starship, and other CLI tools.
+10. Symlink config files from `~/.dotfiles` to system equivalents.
+11. Apply modern macOS system preferences (optional).
 
 ## Preparation
 

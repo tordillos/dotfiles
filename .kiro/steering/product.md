@@ -11,8 +11,7 @@ This repository provides a complete, automated setup for a fresh macOS installat
 - Automated macOS developer environment setup via single curl command
 - SSH key generation and GitHub authentication
 - Homebrew package management with curated tool selection
-- Node.js version management via fnm
-- Rust toolchain installation
+- Node.js version management via nvm
 - Configuration management for terminal, git, and development tools
 - Symlink-based dotfile management
 - Tokyo Night Storm theme consistency across tools
