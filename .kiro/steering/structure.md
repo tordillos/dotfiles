@@ -16,7 +16,7 @@ tomdot/
 │   └── delete_symlinks.sh  # TeX Live symlink cleanup utility
 ├── .macos                   # macOS system preferences
 ├── Brewfile                 # Homebrew package definitions
-├── global_pkg.sh            # Global Node.js packages
+├── global_pkg.sh            # Global Node.js packages (dev tools & E2E testing)
 └── starship.toml            # Starship prompt configuration
 ```
 
@@ -49,7 +49,7 @@ tomdot/
 **Package Management**
 
 - `Brewfile` - Homebrew formulae and casks
-- `global_pkg.sh` - npm global packages list
+- `global_pkg.sh` - npm global packages (development tools & E2E testing frameworks)
 - `git/get_repos.sh` - GitHub repositories to clone
 
 ## Symlink Strategy

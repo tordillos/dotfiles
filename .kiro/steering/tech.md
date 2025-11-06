@@ -26,6 +26,7 @@
 - React Native via Expo
 - Android Studio with emulator
 - Watchman for file watching
+- E2E testing: Maestro & Device Cloud
 
 ### Web3/Blockchain
 
@@ -60,7 +61,7 @@ nvm install 22
 nvm use 22
 nvm alias default 22
 
-# Global Node packages
+# Global Node packages (includes E2E testing tools)
 ./global_pkg.sh
 ```
 

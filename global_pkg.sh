@@ -1,11 +1,9 @@
 #!/bin/sh
 
-# global packages
+# Global packages
 npm install -g @expo/ngrok
-npm install -g @sentry/cli
 npm install -g eas-cli
 npm install -g fkill-cli
-npm install -g keel
 npm install -g localtunnel
 npm install -g ngrok
 npm install -g semantic-release-cli
@@ -13,3 +11,7 @@ npm install -g sharp-cli
 npm install -g serve
 npm install -g typescript
 npm install -g wrangler
+
+# Test E2E
+npm install -g @devicecloud.dev/dcd
+npm install -g maestro-cli
