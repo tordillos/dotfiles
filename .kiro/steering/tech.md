@@ -25,7 +25,6 @@
 
 - React Native via Expo
 - Android Studio with emulator
-- Fastlane for deployment
 - Watchman for file watching
 
 ### Web3/Blockchain

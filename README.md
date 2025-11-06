@@ -31,7 +31,7 @@ There is some preparation to be done before performing a clean install of macOS 
 - Ensure all repos that you want to be cloned from GitHub are included in the `repos` array in `~/.dotfiles/git/get_repos.sh`.
 - Ensure local `~/.dotfiles` and repos are up-to-date & pushed to GitHub.
 - Ensure VS Code is signed into and synced.
-- Ensure Chrome is signed into and synced.
+- Ensure Microsoft Edge is signed into and synced.
 - Login to iCloud with a browser and ensure all backed-up fonts and preferences have actually been uploaded.
 - Update MacOS to the [latest version](https://support.apple.com/en-us/HT201541).
 
@@ -50,7 +50,7 @@ There is some preparation to be done before performing a clean install of macOS 
 - Install fonts backed-up to iCloud.
 - Launch Raycast & setup.
 - Install apps unavailable via Homebrew / App Store (e.g. IdeaShare).
-- Login to Chrome & enable sync.
+- Login to Microsoft Edge & enable sync.
 - Add SSH public key to Azure DevOps.
 - Install Android studio Emulator.
 - Restart computer.
