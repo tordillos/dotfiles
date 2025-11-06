@@ -27,9 +27,7 @@ tomdot/
 - `bat/` - Enhanced cat tool configuration and themes
 - `ghostty/` - Terminal emulator config and Tokyo Night theme
 - `git/` - Git configuration and global gitignore
-- `kitty/` - Kitty terminal config and themes (legacy)
 - `vscode/` - VS Code custom styling
-- `zed/` - Zed editor settings
 - `zsh/` - Shell configuration and aliases
 
 ### Key Files by Category

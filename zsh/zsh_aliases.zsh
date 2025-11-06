@@ -34,11 +34,6 @@ alias dfk="kiro ${DOTFILES}"
 alias c="code ."
 alias dfc="code ${DOTFILES}"
 
-# Zed
-alias zed="open -a Zed.app"
-alias z="zed ."
-alias dfz="zed ${DOTFILES}"
-
 # Files & Directories
 alias ..="cd .."
 alias dl="cd ${HOME}/Downloads"

@@ -7,7 +7,7 @@
 - **Version Management**: nvm for Node.js
 - **Languages**: JavaScript/TypeScript (primary), Python
 - **Terminal**: Ghostty with Tokyo Night Storm theme
-- **Editor**: VS Code, Zed, Kiro
+- **Editor**: VS Code, Windsurf, Kiro
 - **Git**: Enhanced with delta for diffs
 
 ## Development Tools
@@ -72,7 +72,6 @@ dv          # cd to ~/Developer
 df          # cd to ~/.dotfiles
 k           # Open Kiro in current directory
 c           # Open VS Code in current directory
-z           # Open Zed in current directory
 ```
 
 ## Configuration Files
