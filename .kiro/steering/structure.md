@@ -27,7 +27,6 @@ tomdot/
 - `bat/` - Enhanced cat tool configuration and themes
 - `ghostty/` - Terminal emulator config and Tokyo Night theme
 - `git/` - Git configuration and global gitignore
-- `iterm2/` - iTerm2 color schemes (legacy)
 - `kitty/` - Kitty terminal config and themes (legacy)
 - `vscode/` - VS Code custom styling
 - `zed/` - Zed editor settings
