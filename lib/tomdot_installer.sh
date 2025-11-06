@@ -407,11 +407,11 @@ install_homebrew() {
 
     echo "Installing Homebrew..."
 
-    # Download and install Homebrew
-    if ! /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"; then
-        echo "Failed to install Homebrew"
-        return 1
-    fi
+    # # Download and install Homebrew
+    # if ! /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"; then
+    #     echo "Failed to install Homebrew"
+    #     return 1
+    # fi
 
     # Add Homebrew to PATH for Apple Silicon Macs
     if [[ -f "/opt/homebrew/bin/brew" ]]; then
