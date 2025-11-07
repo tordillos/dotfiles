@@ -83,5 +83,6 @@
   "windsurf.autocompleteSpeed": "fast",
   "gitlens.ai.model": "deepseek:deepseek-chat",
   "windsurf.marketplaceExtensionGalleryServiceURL": "https://marketplace.visualstudio.com/_apis/public/gallery",
-  "windsurf.marketplaceGalleryItemURL": "https://marketplace.visualstudio.com/items"
+  "windsurf.marketplaceGalleryItemURL": "https://marketplace.visualstudio.com/items",
+  "git.autofetch": true
 }
