@@ -82,6 +82,6 @@
   "workbench.layoutControl.enabled": false,
   "windsurf.autocompleteSpeed": "fast",
   "gitlens.ai.model": "deepseek:deepseek-chat",
-  "windsurf.marketplaceExtensionGalleryServiceURL": "https://open-vsx.org/vscode/gallery",
-  "windsurf.marketplaceGalleryItemURL": "https://open-vsx.org/vscode/item"
+  "windsurf.marketplaceExtensionGalleryServiceURL": "https://marketplace.visualstudio.com/_apis/public/gallery",
+  "windsurf.marketplaceGalleryItemURL": "https://marketplace.visualstudio.com/items"
 }
