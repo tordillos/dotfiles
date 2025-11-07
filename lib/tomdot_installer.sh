@@ -537,6 +537,7 @@ create_symlinks() {
     # Create necessary directories
     mkdir -p "${HOME}/.config/bat"
     mkdir -p "${HOME}/.config/ghostty"
+    mkdir -p "${HOME}/Library/Application Support/Windsurf/User"
 
     # Function to create symlink safely
     create_symlink() {
@@ -568,6 +569,8 @@ create_symlinks() {
     create_symlink "ghostty/config" ".config/ghostty/config"
     create_symlink "ghostty/themes" ".config/ghostty/themes"
     create_symlink "starship.toml" ".config/starship.toml"
+    create_symlink "windsurf/settings.json" "Library/Application Support/Windsurf/User/settings.json"
+    create_symlink "windsurf/keybindings.json" "Library/Application Support/Windsurf/User/keybindings.json"
     create_symlink "zsh/.zshrc" ".zshrc"
     create_symlink "zsh/.zprofile" ".zprofile"
 

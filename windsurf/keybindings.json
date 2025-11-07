@@ -1,0 +1,39 @@
+// Coloque sus atajos de teclado en este archivo para sobreescribir los valores predeterminados
+[
+    {
+        "key": "shift+cmd+r",
+        "command": "workbench.action.files.openFile",
+        "when": "false"
+    },
+    {
+        "key": "cmd+o",
+        "command": "-workbench.action.files.openFile",
+        "when": "false"
+    },
+    {
+        "key": "cmd+p",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "cmd+p",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+7",
+        "command": "-editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+[Semicolon]",
+        "command": "workbench.action.terminal.toggleTerminal"  
+    },
+    {
+        "key": "cmd+g",
+        "command": "git-graph.view"
+    }
+]

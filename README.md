@@ -19,7 +19,7 @@ On a fresh macOS system, tomdot will do the following:
 7. Install global Node.js packages via npm.
 8. Install apps from the App Store via mas-cli.
 9. Configure bat, Starship, and other CLI tools.
-10. Symlink config files from `~/.dotfiles` to system equivalents.
+10. Symlink config files from `~/.dotfiles` to system equivalents (including Windsurf editor).
 11. Apply modern macOS system preferences (optional).
 
 ## Preparation
@@ -57,7 +57,9 @@ There is some preparation to be done before performing a clean install of macOS 
 
 ## Credit
 
-The tomdot repo was assembled with many thanks to these smart folks:
+This repository is a fork of [Tom Hendra's dotfiles](https://github.com/tomhendra/dotfiles), customized for personal use.
+
+Additional inspiration and thanks to these smart folks:
 
 - [Dries Vints](https://github.com/driesvints/dotfiles)
 - [Kent C Dodds](https://github.com/kentcdodds/dotfiles)

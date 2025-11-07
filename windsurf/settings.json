@@ -1,0 +1,87 @@
+{
+  "@azure.argTenant": "",
+  "ReactNativeIDE.panelLocation": "side-panel",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.language": "en,es-ES",
+  "cSpell.userWords": ["codesmells", "linkedin", "lucide", "tanstack"],
+  "console-ninja.featureSet": "Community",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.accessibilitySupport": "off",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+    // "source.organizeImports": "explicit"
+  },
+  "editor.minimap.enabled": false,
+  "excalidraw.image": {
+    "exportScale": 1,
+    "exportWithBackground": true,
+    "exportWithDarkMode": false
+  },
+  "excalidraw.theme": "light",
+  "git.confirmSync": false,
+  "github.copilot.advanced": {},
+  "github.copilot.chat.editor.temporalContext.enabled": true,
+  "github.copilot.chat.localeOverride": "en",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "gitlens.advanced.messages": {
+    "suppressCreatePullRequestPrompt": true
+  },
+  "gitlens.views.scm.grouped.views": {
+    "branches": false,
+    "commits": false,
+    "contributors": false,
+    "launchpad": false,
+    "remotes": false,
+    "repositories": false,
+    "searchAndCompare": false,
+    "stashes": false,
+    "tags": false,
+    "worktrees": false
+  },
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "microsoft-sovereign-cloud.environment": "",
+  "terminal.integrated.env.osx": {
+    "CW_NEW_SESSION": "1",
+    "Q_NEW_SESSION": "1"
+  },
+  "window.commandCenter": false,
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Expo Dark",
+  "workbench.editorAssociations": {
+    "*.svg": "editor.excalidraw"
+  },
+  "workbench.iconTheme": "dark-minimalist-icons",
+  "workbench.startupEditor": "none",
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    "Follow the conventional commit message format.",
+    "Limit the first line to 72 characters or less."
+  ],
+  "liveServer.settings.https": {
+    "enable": false, //set it true to enable the feature.
+    "cert": "", //full path to certificate file
+    "key": "", //full path to key file
+    "passphrase": ""
+  },
+  "liveServer.settings.port": 80,
+  "windsurf.chatFontSize": "default",
+  "windsurf.rememberLastModelSelection": true,
+  "windsurf.openRecentConversation": true,
+  "windsurf.explainAndFixInCurrentConversation": true,
+  "workbench.layoutControl.enabled": false,
+  "windsurf.autocompleteSpeed": "fast",
+  "gitlens.ai.model": "deepseek:deepseek-chat",
+  "windsurf.marketplaceExtensionGalleryServiceURL": "https://open-vsx.org/vscode/gallery",
+  "windsurf.marketplaceGalleryItemURL": "https://open-vsx.org/vscode/item"
+}

@@ -28,6 +28,7 @@ tomdot/
 - `ghostty/` - Terminal emulator config and Tokyo Night theme
 - `git/` - Git configuration and global gitignore
 - `vscode/` - VS Code custom styling
+- `windsurf/` - Windsurf editor configuration and settings
 - `zsh/` - Shell configuration and aliases
 
 ### Key Files by Category
@@ -45,6 +46,8 @@ tomdot/
 - `git/.gitconfig` - Git user settings and preferences
 - `git/.gitignore_global` - Global gitignore patterns
 - `bat/bat.conf` - Syntax highlighting configuration
+- `windsurf/settings.json` - Windsurf editor settings
+- `windsurf/keybindings.json` - Windsurf keyboard shortcuts
 
 **Package Management**
 
@@ -59,6 +62,8 @@ The installation system creates symbolic links from `~/.dotfiles/` to their expe
 - `~/.dotfiles/zsh/.zshrc` → `~/.zshrc`
 - `~/.dotfiles/git/.gitconfig` → `~/.gitconfig`
 - `~/.dotfiles/ghostty/` → `~/.config/ghostty/`
+- `~/.dotfiles/windsurf/settings.json` → `~/Library/Application Support/Windsurf/User/settings.json`
+- `~/.dotfiles/windsurf/keybindings.json` → `~/Library/Application Support/Windsurf/User/keybindings.json`
 - And more...
 
 ## Theme Consistency

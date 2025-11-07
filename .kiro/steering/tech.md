@@ -80,5 +80,6 @@ c           # Open VS Code in current directory
 - **Shell**: `.zshrc`, `.zprofile`, `zsh_aliases.zsh`
 - **Git**: `.gitconfig`, `.gitignore_global`
 - **Terminal**: `ghostty/config`, `starship.toml`
+- **Editors**: `windsurf/settings.json`, `windsurf/keybindings.json`
 - **Tools**: `bat/bat.conf`, various theme files
 - **Package Lists**: `Brewfile`, `global_pkg.sh`
