@@ -43,5 +43,7 @@ cask 'the-unarchiver'
 cask 'visual-studio-code'
 cask 'windsurf'
 cask 'zulu@17' # https://docs.expo.dev/workflow/android-studio-emulator/#install-dependencies
+cask 'claude-code'
+cask 'claude'
 
 # Mac App Store
